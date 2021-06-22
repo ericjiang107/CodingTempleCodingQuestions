@@ -2,7 +2,6 @@
 
 #using counter to compare to said value. The counter counts how many times the while loop is performed. 
 #using while
-
 n = 1
 counter = 0 
 while counter < 100:
