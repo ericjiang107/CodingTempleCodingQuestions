@@ -9,4 +9,4 @@ def max_num_in_list(a_list):
     return maxNum
 
 
-max_num_in_list([1, 2, 3, 4, 5, 10, 1, 2, 3, 7])
+print(max_num_in_list([1, 2, 3, 4, 5, 10, 1, 2, 3, 7]))
