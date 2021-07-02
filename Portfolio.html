@@ -1,19 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head> 
+        <link rel="stylesheet" href="Style.css"> <!-- To reference the css sheet-->
+ 
         <title>Portfolio</title>
-
-        <style>
-            .center {
-                text-align: center;
-            }
-
-        </style>
-
+ 
         <body>
             <h1 class = "center"> Eric Jiang </h1>
-            My name is Eric Jiang, 22 years old. 
-        </body>
 
+            <nav>
+                <ul class = "menu">
+                    <li> <a class = "bar" href = "Coding Temple" style = "text-decoration: none;">Coding Temple</a> </li> <!-- style = "text-decoration: none" removes the underline from the link-->
+                    <li> <a class = "bar" href = "Learn HTML" style = "text-decoration: none;">Learn HTML</a> </li>
+                    <li> <a class = "bar" href = "Learn CSS" style = "text-decoration: none;">Learn CSS</a> </li>
+                    <li> <a class = "bar" href = "Other Page" style = "text-decoration: none;">Other Pages</a> </li>
+                </ul>
+            </nav>
+
+            <div class = "container">
+                <div class = "column">
+                    <div class = "Aboutme"> <!-- allows for further custimization for whatever is within it-->
+                        <h1> About Me: </h1>
+                            <center>  <img src= "https://media1.tenor.com/images/dc624cc490adc36965999af274d11f24/tenor.gif?itemid=6645301" alt="My Addiction"> </center>
+                                <br> Hello! My name is Eric Jiang. I am 23 years old and I graduated from Fairfield University with a BS in Mechanical Engineering. </br>
+                                <br> Here are some interesting facts about me: </br> <!-- br adds a new line-->
+                                    <ul>
+                                        <li> I enjoy playing video games sometimes a bit too much (#nosleepgang) </li>
+                                        <li> I've traveled to Germany, Nicaragua, China, and Bolivia </li>
+                                        <li> I've always had an interest in coding and started teaching myself during my sophomore year of college the basics
+                                        <li> I have a pet husky named Nova. Here is a picture of her: </li>
+                                    </ul>
+                                        <img src="images/Nova.JPG" alt="My dog"> 
+                    </div>    
+                </div>
+                <div class = "column">
+                    <div class = "whoami">
+                        <h1> Here's A Picture of Me </h1>
+                        <center> <img src = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDw8UDw8UDAwaDAwMDBoPFA0VHhwgIB4cHR0iJjEqIiQvJR0dKzgrLzo0QC5AISk6PTAsNDE2QDQBCgoKDQwNFA4NFSkZFBgrMDQpKTApKSsrNCkpNCk0Kys0KTQ0KSkrKykrKSkpKSk0KSkpKSkpKSkpKSkpKSkpKf/AABEIAMgAyAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAACAAEDBAUGBwj/xABCEAABAwIDBAYHBAgGAwAAAAABAAIRAyEEEjEFQVFhBhMicYGRMkKhscHR8AfC0uEjUmKSorLT8RQzY3KCg0Oz4//EABkBAQEBAQEBAAAAAAAAAAAAAAABAgMEBf/EACERAQEBAQADAAIDAQEAAAAAAAABAhEDITESEzJBYVEE/9oADAMBAAIRAxEAPwDuJR0RCjBUu5cGkhQPCUlEqGYiQlyQegZwQuYpJQTdBC4Ji4xCnLVE97WgkkAbySoAEqRjd6xsZ0pwdLWs0kT2W3WLi/tFwrfQa5xvFtfanB2ZQrzun9pzL5qJ36OWrgPtBwNUw9xpGbZxY+KvKOvBRSqdDHMc7KCDLA5pB1H0QrLSgIlRNBRkoZUDtEFTBRNcpJVDwkUkORASZAQQENN6CRySRukgKm1JwUgcEjCgja9G02QvCQKAT7FI0oSEMQgGvWiyFtcZSTopiwG68w6e9Ki17sNSOUNJD3h13HgnKNDpH04fTfkoFpF5MSQuN2j0kxVWesqOIv2QYC5846eZ4qKriib/AAW+CxVqE3i06GVXfB5d0qrVxR0079UP+JK1wSOlDKjdWJuh6ziiN3ZXSGvQfTc15IYTlaTuOoXrnRzpZRxTGAHLUNnMJ9ErwfrOCnwmLdTc17XEOa4EEcVLno+lWTvRZVznQTbBxeEa97pqCc4G65A9y6TMuana1GAgBRhUEkmAToBIUJbF1OgqMlBGKqSgewg8klOquU7KQlA1EAiI3ElSMEDRFCRVDZkDyEWVD1QKDM6QbQOFwlWqNQ3s950XgGOxWd5c4kkklxlewfarVyYEAGM1Ztp1EFeJvdxWslG+p5biFDUqE307lPhcI+oYaJ8FuYTorUfqI0U1uT61nFvxzBBSLV3FLocRObTkon9EajpLW9kakqfuyv6dOLylKF11bYIZqJKzsTssDTVP2w/VWDP90pV6tgyFVfThdJqVi5sdJ0F24cLimS7LTJh4AmV7zTcCARoQCvmKk8tcCDBEQQveugO1Di8E1zozNcWmFnUI6UFGAgARgrIIJJJIEkkmlANQApJykgJqkCENRIAqPhOEFRgKIAIDTJ1Wr4jLuQcV9sDCcFTI3YgT4gryCnh5IXtHT5vXYCtb0SxwnddeT4SgSQBx0Sa9LJ7dp0U2SxtMOIuYuusp0gNBCz9iUctNrd8CVtMon+6+dvXddfQxnkQtptmSJ5KStQziAYHAKenQk3VoYUDePNaz1dOaxeyKQBzSSsLE7Ob6rfErvMVhGkWIPKVgYihciE1aSTji8bsuATAOtlz+1NnloBjivQcThDwXO7eoy0wNJsuni3euPkxOOFewr1j7Gq00cQ0mYqUzEaWK8yqUtV6P9jkhuL4TQt5r22+njemgowVWeTuTNJNlgWgU6BoThUEkmSQM4pJikgsQkkSmBQItQZYUgKZyCCo8qM05KsZE0QpxWR0lwQfg8Q0C5ougcxdeY9E8CHue8izY816/iBLSHejlM9y8r2bU6uvUwdMkN61xdVAElsWA+axv+NkdPF/Lta9fa1SmS2ky+9zgqlbpRi6cBzARvKDE4ujSJL5J5vcT71SxW3aIaP0TocDlOc/Ncc5l/p6NWz31sYfpaHjeDaQVbO2CRM2XGUnir/liDuBF1fw2y8XUpZ2tbBbIzPIt5KXEWbrTx3SQsBy3KxGbaxtVxyNsoqeFdlD3ibGY3KKrtc0YigSCLEkhbzif0zrVv1oOq4pt3Eyk2qagOYX381lv2zJGallkC43JPxhY0VGtJBdBaZ9hS5TrP2xhOrfIHZdK7z7JKRFHEPIsarAD3D81ym3Bmo0X3BdBLI9CRxXcfZ3tBhpDCtZlLWl2aZL73J4Ltm8nK4anb2O0BTsEFRwpQtOYwU6jlE0qgkyRTKB0kySosqN6kTG6gjbxUgKjqOTtQJxTEoXJmygMiQvP6mGipTqR/wCas0mNA70faB5rv5XHuBDqjSJl77HSJXDzXnHo8E+jq7PY4XDQ7iWyVRdscE3yEcsOCVoDZubtGs9th2WOn3qltKk2kCRiqs8CW/JefP8AlevnfsQ4+jTpUXMpj9K4ZabgBMngFobO2W9uGyPe6cgEB0ZVT2HhmgDFVqhe++QOPoD5latfa9ENPG0X0TXsk4wdjN6k1aFcBxzE0i4atOvtU9bZs3ZUdTnUB0hFi30cSDLi2PReHQ5p4grN2UcxcypialnEAtcO0PJa/wBZ5z0v09lMHafUc88xCq7Rosz0g3Rpc8iN0ED2n2FXsTs1kdnE1Z/3rn8bRqUyXCpn/adqe9JP9NfPintRzXsqO1ALY8Fd6COLcU2pucHNgcDosx7pYRxmy6DoZs8NqUwT2zmLmgzlAC6/ORxvy16JCcFC3gnIXoeU5KIIQiRDykmTFUPKSGUlBPUQzCNxso4QCealahdonhQIXOiJzUhok1/FUMAuV25R6qsSJhxJXVvncsLpRTJpMcdQ4jzH5Ln5c9y6+LXNMCttKGm65uviXYiqGA2ntFWceCQQOayMK2pSObITxgSV5sx67qtPaeDq+ix5a20ALHrsrtt1k23i66Onteo8DJQLjAu8ZVG+ni3y44JpduJcPmt56tnXKNfXafTMfqkWW9TZ1dKm42eLu5qTE4jFs9PDNHJpEhZ9XaVR5y9U6TMgsJVvaz8bDNp21WdjsWXWUVPDOZTJda5yjkqrgVMydTVvFzZ1Mve0ZS/tCWtEkr0PYWzhSDn9WKb3G/EBc30CozVe4+qzXmT/AHXdBdpmfXm3q/BNepWlQhTNXRyEUxMJSo3uVBhyRKiSzKCQlJRykgupyk5IGUAOCZpIU0IHtQO1M0JmKQBALiqG1KJqUXtFyBIHcrzwgmEs76WXnt5riLFWtnVBMwr/AEm2O5pNWmJpmS4N9Q/JY2AdBXi3ix7fHuVq16YElhEfqncszEYx4Maa6LREEXKp1w0alYzf+uyk99R2+Oalo5abSZl59Y7kL449yrYqoAIWr7YV8biZt3rPJkpqz5KHrQ3meC7Zy46077oXhCyiXkXe4R3DT4roX1CNFh9E9rjEURbK5kBzRpG4hbgbK7848tvamaZCJpKrtN4Cka4oidxUJcmB4og1UDmKSOExQC0pKQBJBoEJgE4KRVCKjc0lG0pyUDNEBMHSmNRAEBuahLUbXJiQgAxBnSDK8yx9RvWPfSILC9xbGhErs+l+L6nCVDOrSLGDEX+XivOdi1M9Ft9MwPmuXmnMyu3h+rD9oHjCqVsYSfSVivh94WfVpwuE/F37Uhxn7XtVWvi+c9yirFU3krpJGbakqYg7rdyh6yLpZVXrkmw1W57c7XX/AGfYkseD6rnOD+6R816cBC806O4bI1rYvbXSYE+0Lv8AZ+JzMAOogTvK9Fz668/VuBopOrUYEqULmpWTF6heTKEl24IDqYgBAK0m2iZtOdVM2iAoHBSTu0SVGmEpQhIhUPKWVRgqTMgAsuk8onOQO8+9ambU6jadVWxeILRaw471PVrtaNb3sLyqGLJINgPSgTv4rpnEn1m1znSysXYWpmNy0Ce+4/lPmuF6K4nsFp3Pcu46QUJoRqO1/M0fFec7NJp1HiI7brLl/wCjPcu3hvK655VDFAFTUqshQYhfPj1qFZgVV1NXS1DUYAF1lYrNqhXdg7NNVxeRLG6nwJPsBUeFwbq9VlJmrnATw5r0GjhmUKbKTIENF+JMEk+VP94r1eHHfbz+TXPTOwbMri0xM7ryd/mZXQbPqHKbyM7gD3GPgsXBNPWGGzfsyNDoB8FrbOp5WUxrOQOdvN3fAr1c9OFa1Kpx048PgrLSsmjWy3JkZZzHVth+f5K8ypBINjp36/I/V1LmU6lrtOvBRgkKQPiPHT6+aIsDly14ufGpoIdvT9ZKbLCJrVzssaOEkhYpKDRCSeVG86qgnNUTXi4idIgqF1Y/IHefoITVDQCbzHjz9q65xz6z1YzmBu11VTE13SQ25vJdx+gUPWkgudpAnnxUeGBMkjtSNeP9wfNbZS0aIF9Ta5+t4Q4ptgByv9d3tU7RpwHutCjrDcNTP17lRnOwYfTDSJENF+Ek/cHmvLtp7OdSrVGkQcxm0X+oK7bp10hdgabKVCOtqNMuN8guCY81yHR/Hvxb3UsSS+pULsmINyHG4BHf71nyZmpxrF5eiwJtdS1GEqZ2G6qo5u4OIBI1U9OhK+ZuWX292b2elJmGJUGLp7gJPJb7aG4C+4BRYym3CtNaoYfld/h6XrTFnHgBrzTxy6vDdkjW6O7Abh6fWVP8x1Mmsf1GmeyOcNd4wp6x7Ty4CQTnG6bkj+YeLVz2yOlz2kU8V2wSYfYEGW2dytHiVuYr0HNBzHK4mp+sSdfYw+C+tiSTkfP1bb7BgxanxFQOfPIg6czHktHDQA1vBwkdxb81S2eS6jLtTlbJPIg+1wVui4FjiB6rj4kA/cQS0mS0t/0mC/HK/wDJWqYl0bjVdblmH4ygbHWRuzn/ANgHuKCk8tAdwpgn91p+6VUGx+WCb5mku5w1h+J81YLy3NOgkSOIzfhP5qANkhp3EAeeX7o80VOoHdXO9zS7u7BP85QWw+TEyb6/XIo2uG5UqTvRm/olwP8A1z95RnElpa2CSWguPkPfPmpzp1oOckqrMQDoZsLpLn+qNfk28qqVMSC/KNBJKsVqgDSeRWVs10gk2LnbzJ1Kz45/a6TkXh1oAnlp8yq9Z5c69gAfbP4VNVbO++We+ZHxUNIguncSSfMH7y6spcQ4WG6+b67nexS0GWE2sJ8dfcVE5gJv3Hu+nDyVgHef1h7DqgIc9b+e9DhaZqP5S2eUg/EKPEOgECxDTA5gfn7Fn7YrODS1hy5swLgbm8x3Q5B5z07r/wCJ2hUDTmayGNINjGpHmn2bst7WurNsGOHamCDM25wrmG2SauKMggF9zG4x8l1NLZLCwMDQCWtE75LAPfKnLV7xzNd9Q0H1Hlpa14EubLjEi37wSw2M7GbLmIAsDCLaWzC3NmBAdLpad1ie+zhbkhwuCytc0EuN8ppkQ5v9p8ljfimrLW8eT8ZVSvt2uGwJa2AXFrQ0u0NyOUrKptfVexky5zwJPGY991r4zCOpucxwkg3jRxv+Fw/5KbAbPDRUqubLRlaz/UIge3Mtfjz1GfyYuO2aabhSJGbs5zw3fE+xbmwsa40ix5lzQw9okl4mAPC47jyVcbOeXuc4RmcII0vN/a1FhqZzBoF3FoI4NsSfDMVZ2RHSYQdYymAfSDjI3lxy/cHmtag0HTRzxHcT/wDVUcIzJujq2Uw1o4hskedM+avZMoIHqNIHhP8ASC6Mg6yIP7Dj/A13vUmIZGcciB5VR8kAZ+kyDcY8JLPi1S5i7L+05t+/L/UKBPfDiZsHVD/ED90qv6II4Uz4Q0/FqVdxyEjVzG+ZZUT1RObm5w8zV+YQTV7dZG4O9nW/hVevOeNRDgGDU9tw+IaP9x4Iy7N/yPnM/wBRVqrg55gG8ZiNXb7eDo738lBL1xgdqczgJHruOke3wc1JR02hziXQGMa4S3Qk+kR4AgdzUlUb+164ZTcZiAVnbKcQ1kAHsCwSSXLPxurz4EneCL90fmq2G7MngB7j+FJJbRbY3eL8PrxHkjJj3D68AkkoIc15PGn8QfgqNbDl+WdABPMwR90JJKh2MANQxpEHuLvkpmCHRwfSH8bgkkqitXLTScSJiiDBH7LvwtWJRdUphrKbc9w0EGxM2HsP76SS0kT0tglwD3uJeQCXE+sTIt+75OQ4ikDUZSp+hSY0mN7xmI9wSSUo1KuHa1hAAJDXBnkQPdTUdPZtPM54AuYB5FzgfYWpJKqWD7UE+s6XeJbPverNAeiTvILv4J/mckkoAwju0HHUBhPf2XH+UpqcyY9RrY74H9JJJVEeJAa5jJsHsHgDHucnoHssJ0hpPgKZPvckkoBo2LJ9XLPh1f4CoKANzNw1gzD1AG+8do9+VJJFKuS1pygDKLAmzTIHvAH/AFpJJKo//9k=" alt = "Picture of Myself" height="200" width="200"> </center>
+                    </div>    
+                    <div class = "Goals">
+                        <h1> Goals: </h1>
+                            There are still a lot of things that I want to achieve in life but once I break them down into smaller goals, they become more realistic. Some of them include: 
+                            <br> </br>
+                                <img src = "https://media1.tenor.com/images/d0ed52f3f0b201dcca575563c66ef445/tenor.gif?itemid=9588201" alt="Coding" height="300" width="515"> 
+                                    <ul>
+                                        <li> Learning how to code more efficiently on a professional level as a web developer</li>
+                                        <li> Get a coding job so I can save up on gas money 😭 </li>
+                                        <li> Work out and attain a healthier life style cause I be staking cup ramen and ordering Mcdonalds </li>
+                                        <li> Convert the energy I have for video games toward coding </li>
+                                    </ul>
+                    </div>    
+                </div>
+                <div class = "column">
+                    <div class = "reason">
+                        <h1> Why I Want to be a Web Developer </h1>
+                            Honestly, the reason why I wanted to become a web developer was cause I felt like my life was lacking something. I wasn't happy working at my previous job and I felt like I needed to shift somewhere else. I remembered that I did have an interest in coding so I decided to give this a shot and here I am. So far so good. 
+                            <br> </br>
+                                <img src = "https://memegenerator.net/img/images/72574576.jpg" alt = "Old man" height="400" width="500">
+                    </div> 
+                    <form action = "Food.php"> <!-- to create a drop down list -->
+                        <p>
+                            What type of food do you like to eat? </p>
+                        <select name = "Food Options">
+                            <option value = "Cup Noodle"> Cup Noodle </option>
+                            <option value = "Fast Food"> Fast Food </option>
+                            <option value = "Sushi"> Sushi </option>
+                            <option value = "Ice Cream"> Ice Cream </option>
+                            <option value = "Cereal"> Cereal </option>
+                            <option value = "Halal"> Halal </option>
+                            <option value = "All you can eat buffets"> All you can eat buffets </option>
+                            <option value = "KBBQ"> KBBQ </option>
+                            <option value = "Hotpot"> Hotpot </option>
+                        </select>
+                        <input type = "Submit" name = "Submit" value = "Submit" />
+                    </form>    
+                    <div class = "link">
+                        <h1> Link </h1>
+                        If you want, here is my LinkedIn so we can connect :) 
+                        <br> </br>
+                        <a href = "https://www.linkedin.com/in/eric-jiang-855a16107/" style = "color: yellow;"> <center> My LinkedIn </center> </a>
+                    </div>
+                </div>
+            </div>
+        </body>
     </head>
 </html>
